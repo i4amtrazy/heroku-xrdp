@@ -20,7 +20,7 @@ RUN apt-get update && \
     apt install unzip -y  && \
     apt install falkon -y  && \
     apt-get autoclean -y  && \
-    apt-get autoremove
+    apt-get autoremove -y
 ADD entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
