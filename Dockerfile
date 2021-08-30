@@ -21,6 +21,8 @@ RUN apt-get update && \
     apt install falkon -y  && \
     apt-get autoclean -y  && \
     apt-get autoremove
+RUN useradd -ms /bin/bash iamtrazy
+RUN echo "iamtrazy:i@mtrazy" | chpasswd
 ADD entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
