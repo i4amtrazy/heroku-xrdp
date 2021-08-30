@@ -1,0 +1,7 @@
+{
+    "name": "heroku-xrdp",
+    "description": "deploy xrdp to heroku",
+    "keywords": ["xrdp"]
+    "repository": "https://github.com/i4amtrazy/heroku-xrdp",
+    "stack": "container"
+}
