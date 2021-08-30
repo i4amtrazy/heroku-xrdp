@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt install xfce4 -y  && \
     apt install xfce4-goodies -y  && \
     apt install xrdp -y  && \
-    apt install firefox-esr  && \
+    apt install firefox-esr -y && \
     apt install ssh  -y  && \
     apt install git -y  && \
     apt install nano -y  && \
@@ -20,7 +20,7 @@ RUN apt-get update && \
     apt install unzip -y  && \
     apt install falkon -y  && \
     apt-get autoclean -y  && \
-    apt-get autoremove -y
+    apt-get autoremove
 ADD entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
